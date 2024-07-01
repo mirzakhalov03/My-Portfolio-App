@@ -1,0 +1,44 @@
+.my-skills {
+  padding: 100px 0;
+  background-color: #694fff21;
+
+  h2 {
+    color: #684fff;
+    font-family: var(--daysone);
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .my-skills__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    .my-skills-card {
+      width: 150px;
+      height: 150px;
+      background-color: rgb(240, 240, 240);
+      border: 3px solid #684fff;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      box-shadow: #684fff 0 0 10px 1px;
+      transition: 0.1s ease-in;
+      cursor: pointer;
+
+      img {
+        width: 70px;
+        height: 70px;
+      }
+
+      &:hover {
+        box-shadow: #684fff 0 0 20px 1px;
+        transform: scale(103%);
+        background-color: white;
+      }
+    }
+  }
+}

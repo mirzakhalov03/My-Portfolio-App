@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+body {
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to top, #0f0c29, #302b63, #0f0c29);
+  background: linear-gradient(to top, #0f0c29, #302b63, #0f0c29);
+}
+
+.projects {
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background: url(../img/stary-bg.png);
+  background-position: center;
+
+  h1 {
+    padding: 30px 0 20px 0;
+    font-family: "Days One", sans-serif;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      color: #cb73f4;
+    }
+  }
+
+  &__intro {
+    text-align: center;
+    padding: 10px 0 30px 0;
+
+    h2 {
+      font-size: 32px;
+    }
+
+    span {
+      color: #cb73f4;
+    }
+  }
+
+  .big__wrapper {
+    height: 88vh;
+    overflow-y: auto;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 50px 60px;
+
+    flex-wrap: wrap;
+    padding: 50px 0;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+  }
+
+  &__card {
+    width: 400px;
+    height: 450px;
+    box-shadow: 0 0 20px 0px #c770f0e0;
+    border-radius: 20px;
+    background-color: #1a1a1a3b;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    user-select: none;
+
+    &:hover {
+      transform: scale(102%);
+      transition: 0.3s ease-in-out;
+      box-shadow: 0 0 20px 8px #c770f0e0;
+    }
+
+    &__img {
+      width: 100%;
+      height: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 10px 0 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+      }
+    }
+
+    &__text {
+      padding: 10px 15px;
+
+      h2 {
+        color: goldenrod;
+        margin-bottom: 7px;
+        text-align: center;
+      }
+      strong {
+        display: block;
+        color: rgba(220, 20, 60, 0.779);
+        text-align: center;
+      }
+      span {
+        display: block;
+        color: dodgerblue;
+        text-align: center;
+      }
+    }
+
+    .forBtns {
+      width: 50%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      gap: 10px;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: white;
+        background-color: #7d3c9b;
+        padding: 10px 10px;
+        border-radius: 10px;
+        width: 100px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s ease-in-out;
+        gap: 7px;
+
+        &:hover {
+          background-color: #7d3c9b;
+          box-shadow: 0 10px 20px 0 #000000bb;
+          transform: translate(0, -5px);
+        }
+      }
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #cb73f428;
+  border-radius: 10px;
+}
+
+/* Scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: #cb73f491;
+  border-radius: 10px;
+}
+
+/* Scrollbar handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #cb73f4;
+}
+
+.project-footer-links {
+  text-align: center;
+  max-width: 100%;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  .github__link {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    background-color: #7d3c9b;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    gap: 10px;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #7d3c9b;
+      box-shadow: 0 10px 20px 0 #000000bb;
+      transform: translate(0, -5px);
+    }
+  }
+
+  .backHome {
+    text-decoration: none;
+    color: #7d3c9b;
+    font-weight: 700;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    gap: 10px;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      background-color: white;
+      box-shadow: 0 10px 20px 0 #000000bb;
+      transform: translate(0, -5px);
+    }
+  }
+}

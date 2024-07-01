@@ -1,0 +1,51 @@
+@import "./blocks/nav";
+@import "./blocks/hero";
+@import "./blocks/about";
+@import "./blocks/projects";
+@import "./blocks/footer";
+@import "./blocks/blog"; 
+@import "./blocks/contacts";
+@import "./blocks/funtime";
+@import "./blocks/myskills";
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --daysone: "Days One", sans-serif;
+    --roboto: "Roboto", sans-serif;
+}
+
+%display{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+li, a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+

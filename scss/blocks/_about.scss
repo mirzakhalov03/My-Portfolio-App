@@ -1,0 +1,568 @@
+.about {
+  max-width: 100%;
+  width: 100%;
+  padding: 50px 0;
+
+  &__intro {
+    text-align: center;
+    font-size: 32px;
+    color: #0a1931;
+    padding: 25px;
+  }
+
+  &__wrapper {
+    box-shadow: rgba(4, 4, 80, 0.3) 0px 20px 19px 15px;
+    padding: 30px;
+    max-width: 100%;
+
+    background-color: #dff5ff87;
+    border-radius: 10px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+      font-size: 32px;
+      color: #0b3475;
+      padding: 5px 0;
+      text-align: center;
+    }
+    p,
+    li {
+      color: #0a1931cc;
+      font-size: 19px;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__leftSide {
+    max-width: 48%;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+
+    .cv__box {
+      max-width: 90%;
+      width: 100%;
+      background: rgba(30, 143, 255, 0.213);
+      border-radius: 15px;
+      padding: 10px;
+      margin: 20px auto;
+      margin-bottom: 10px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+      h3 {
+        font-size: 24px;
+        color: white;
+      }
+    }
+
+    .cv__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 100%;
+      width: 100%;
+      height: 60px;
+      gap: 10px;
+
+      a {
+        max-width: 30%;
+        width: 100%;
+        background-color: #6f717464;
+        border-radius: 10px;
+        height: 50px;
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+        gap: 5px;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(103%);
+        }
+      }
+      .cv__card {
+        img {
+          max-width: 50px;
+          width: 100%;
+        }
+      }
+    }
+
+    .skills-languages {
+      margin: 50px 0;
+
+      li {
+        font-size: 22px;
+        font-family: var(--daysone);
+      }
+
+      ol {
+        line-height: 49px;
+      }
+
+      .skills__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+
+        .skills__li {
+          font-weight: 600;
+        }
+
+        .languages__li {
+          line-height: 50px;
+        }
+
+        .full__wrapper {
+          width: 300px;
+          background-color: #626262a8;
+          border-radius: 10px;
+          margin: 5px auto;
+          box-shadow: black 0px 0px 5px;
+          .full {
+            max-width: 400px;
+            width: 85%;
+            background-color: rgba(30, 143, 255, 0.873);
+            border-radius: 10px;
+            color: white;
+            padding: 0px 10px;
+          }
+        }
+      }
+    }
+  }
+  &__rightSide {
+    max-width: 48%;
+    width: 100%;
+    padding: 10px;
+    li {
+      font-size: 28px;
+      color: dodgerblue;
+    }
+
+    .test__scores {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .SAT {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 83%;
+        width: 100%;
+        // width: 10%;
+        border-radius: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.451);
+        background-color: rgba(255, 217, 0, 0.8);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+        p {
+          font-size: 24px;
+          color: black;
+          padding: 10px;
+          font-weight: 800;
+          font-family: var(--daysone);
+        }
+      }
+
+      .IELTS {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 89%;
+        width: 100%;
+        // width: 10%;
+        border: 1px solid gray;
+        border-radius: 15px;
+        background-color: rgba(255, 217, 0, 0.8);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+        p {
+          font-size: 24px;
+          color: black;
+          padding: 10px;
+          font-weight: 800;
+          font-family: var(--daysone);
+        }
+      }
+
+      .GPA {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 100%;
+        width: 100%;
+        // width: 10%;
+        border: 1px solid gray;
+        border-radius: 15px;
+        background-color: rgba(255, 217, 0, 0.8);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+        p {
+          font-size: 24px;
+          color: black;
+          padding: 10px;
+          font-weight: 800;
+          font-family: var(--daysone);
+        }
+      }
+
+      .score__box {
+        background-color: black;
+        border-radius: 15px;
+        border: 1px solid gold;
+        color: gold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        font-weight: 600;
+        font-weight: 800;
+        font-family: var(--daysone);
+        letter-spacing: 1.2px;
+        padding: 10px;
+      }
+    }
+
+    .work__places {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      .teach-icon {
+        width: 50px;
+        height: 50px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .edu-center {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 100%;
+        width: 100%;
+        font-size: 24px;
+
+        div {
+          font-family: var(--daysone);
+          color: #0a1931cc;
+        }
+      }
+    }
+  }
+
+  .container {
+    max-width: 1500px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 90% !important;
+  }
+  .about {
+    padding: 30px 0;
+
+    &__intro {
+      h2 {
+        font-size: 40px;
+      }
+    }
+    p {
+      font-size: 17px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+    .cv__box {
+      max-width: 100%;
+      border-radius: 10px;
+      h3 {
+        color: black;
+        font-size: 20px;
+      }
+
+      a {
+        .endorsement-span {
+          font-size: 14px;
+        }
+
+        img {
+          width: 30px;
+          height: 30px;
+          margin-top: 3px;
+        }
+      }
+    }
+    .skills-languages {
+      .skills__li {
+        font-size: 18px;
+      }
+
+      .languages__li {
+        font-size: 17px;
+      }
+    }
+    &__rightSide {
+      .test__scores {
+        .scores-des {
+          p {
+            text-indent: 10px;
+            padding: 0;
+            font-size: 18px;
+          }
+        }
+
+        .score__box {
+          font-size: 18px;
+          padding: 5px;
+        }
+      }
+
+      .work__places {
+        .teach-icon {
+          width: 40px;
+          height: 40px;
+        }
+        .edu-center {
+          font-size: 18px;
+
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 978px) {
+  .about {
+    p {
+      font-size: 15px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    &__leftSide {
+      .skills-languages {
+        .skills__li {
+          font-size: 16px;
+        }
+        .languages__li {
+          font-size: 15px;
+        }
+        .skills__wrapper {
+          .full__wrapper {
+            width: 250px;
+            .full {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 868px) {
+  .about {
+    &__leftSide {
+      .cv__box {
+        h3 {
+          font-size: 18px;
+        }
+        a {
+          span {
+            font-size: 14px;
+          }
+
+          .endorsement-span {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .skills-languages {
+        .skills__li {
+          font-size: 14px;
+        }
+        .languages__li {
+          font-size: 14px;
+        }
+        .skills__wrapper {
+          .full__wrapper {
+            width: 200px;
+            .full {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    p {
+      font-size: 13.5px;
+    }
+    h3 {
+      font-size: 18px;
+    }
+    &__leftSide {
+      .cv__box {
+        h3 {
+          font-size: 16px;
+        }
+        a {
+          span {
+            font-size: 12px;
+          }
+
+          .endorsement-span {
+            font-size: 10px;
+          }
+        }
+      }
+
+      .skills-languages {
+        .skills__li {
+          font-size: 12px;
+        }
+        .languages__li {
+          font-size: 13px;
+        }
+        .skills__wrapper {
+          .full__wrapper {
+            width: 200px;
+            .full {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+
+    &__rightSide {
+      .test__scores {
+        .scores-des {
+          p {
+            text-indent: 10px;
+            padding: 0;
+            font-size: 16px;
+          }
+        }
+
+        .score__box {
+          font-size: 16px;
+          padding: 5px;
+        }
+      }
+
+      .work__places {
+        .teach-icon {
+          width: 30px;
+          height: 30px;
+        }
+        .edu-center {
+          font-size: 16px;
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about {
+    &__intro {
+      h2 {
+        font-size: 24px;
+      }
+    }
+
+    &__wrapper {
+      padding: 15px;
+      flex-direction: column;
+      .about__leftSide {
+        max-width: 100%;
+        padding: 5px;
+      }
+      .about__rightSide {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .about {
+    &__leftSide {
+      .cv__box {
+        h3 {
+          font-size: 14px;
+        }
+        a {
+          span {
+            font-size: 12px;
+          }
+
+          .endorsement-span {
+            font-size: 9px;
+          }
+        }
+      }
+
+      .skills-languages {
+        .flex-column {
+          display: flex;
+          flex-direction: column;
+          gap: 0px;
+          .skills__li {
+            font-size: 14px;
+            font-weight: 500;
+          }
+        }
+        .languages__li {
+          font-size: 12px;
+        }
+        .skills__wrapper {
+          .full__wrapper {
+            width: 160px;
+            .full {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
