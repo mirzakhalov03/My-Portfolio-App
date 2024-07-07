@@ -39,7 +39,7 @@
       font-size: 32px;
       color: white;
       padding: 5px;
-      width: 300px;
+      max-width: 300px;
       margin: 0 auto;
       background-color: rgb(105, 79, 255);
       border-radius: 20px;
@@ -51,7 +51,7 @@
       font-size: 18px;
       color: white;
       padding: 5px;
-      width: 300px;
+      max-width: 300px;
       margin: 0 auto;
       background-color: rgba(0, 0, 0, 0.576);
       border-radius: 20px;
@@ -64,10 +64,19 @@
       background-color: white;
       padding: 5px;
       display: block;
-      width: 300px;
+      max-width: 300px;
       margin: 20px auto;
       border-radius: 20px;
       text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .funtime{
+
+    p{
+      font-size: 14px;
     }
   }
 }
