@@ -44,6 +44,17 @@ li, a{
     color: black;
 }
 
+.tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: none;
+    z-index: 1000;
+    pointer-events: none;
+  }
+
 
 
 

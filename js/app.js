@@ -8,11 +8,13 @@ const CHAT_ID = 762049305;
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  let message = `<b>
-        Xabar: ${form.children[0].value} \n
-        
-      </b> 
-      `;
+  const first_name = form.children[0].value;
+  const user_message = form.children[1].value
+
+  let message = `<b> Ism: ${first_name.charAt(0).toUpperCase() + first_name.slice(1)}</b>
+  
+  <b> Xabar: ${user_message.charAt(0).toUpperCase() + user_message.slice(1)} \n</b> `;
+  
   fetch(URI_API, {
     method: "POST",
     headers: {
